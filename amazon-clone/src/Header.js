@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -39,10 +40,15 @@ function Header() {
           <OptionLineTwo>& Deliveries</OptionLineTwo>
         </HeaderOption>
 
-        <HeaderOptionCart>
-          <ShoppingCartIcon />
-          <CartCount>5</CartCount>
-        </HeaderOptionCart>
+       
+          <HeaderOptionCart>
+            <Link to="/cart">
+              <ShoppingCartIcon />
+              <CartCount>4</CartCount>
+            </Link>
+          </HeaderOptionCart>
+       
+        
 
 
       </HeaderNavItems>
